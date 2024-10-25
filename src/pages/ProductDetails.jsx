@@ -4,7 +4,7 @@ import Row from '../Components/common/Row';
 import Button from '../Components/common/Button';
 import Layout from '../Components/common/Layout';
 
-const productDetails = () => {
+const ProductDetails = () => {
   return (
     <Layout>
       <Container className="my-[40px] bg-white">
@@ -73,5 +73,5 @@ const productDetails = () => {
   );
 };
 
-export default productDetails;
+export default ProductDetails;
 

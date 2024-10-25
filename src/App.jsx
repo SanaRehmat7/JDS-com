@@ -1,19 +1,18 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import ProductDeatils from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <Router>
-      <Route path="/" component={Home} exact/>
-      <Route path="/product-details" component={ProductDeatils} exact/>
-      <Route path="/Cart" component={Cart} exact/>
-    </Router>
-  
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/product-details" element={<ProductDeatils />} exact />
+      <Route path="/Cart" element={<Cart />} exact />
+    </Routes>
   );
 }
 
