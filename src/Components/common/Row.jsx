@@ -1,12 +1,11 @@
-import React from "react";
+// Row.js
+import React from 'react';
 
-const Row =({className, children}) => {
-    return (
-      <div className={`flex ${className}`}>
-        {children}
-      </div>
-    );
-  }
+const Row = ({ children, className }) => (
+    <div className={`flex ${className}`}>{children}</div>
+);
 
 export default Row;
+
+
 

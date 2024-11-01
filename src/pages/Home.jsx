@@ -1,22 +1,23 @@
 import React from 'react'
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import TopHeader from '../Components/Header/TopHeader';
 import BottomHeader from '../Components/Header/BottomHeader';
 import HeroSection from '../Components/Home/HeroSection';
 import CatchingProducts from '../Components/Home/CatchingProducts';
-import BestSellerProducts from "../Components/Home/BestSallerProducts";
-import Layout from '../Components/common/Layout';
-
+import BestSellerProducts from '../Components/Home/BestSallerProducts';
+import Footer from '../Components/Home/Footer';
 
 const Home = () => {
-  return ( 
-    <Layout>
-      <BottomHeader />
-      <HeroSection/>
-      <CatchingProducts/>
-      <BestSellerProducts/>
-      </Layout>
-
-     );
+  return ( <div className="w-full">
+    <TopHeader />
+    <BottomHeader />
+    <HeroSection />
+    <CatchingProducts />
+    <BestSellerProducts />
+    <Footer />
+    
+    </div> 
+  );
 }
  
 export default Home;
+

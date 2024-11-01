@@ -15,7 +15,7 @@ const menuItems = [
   const BottomHeader = () => {
     return (
       // Lower Section: Menu Items
-      <nav className="w-full bg-[#2c3a47]">
+      <nav className="w-full bg-[#40505f]">
         <Row className="justify-center gap-8 py-4 flex-wrap">
           {menuItems.map((item, index) => (
             <p

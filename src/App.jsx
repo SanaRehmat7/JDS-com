@@ -1,19 +1,18 @@
-import React from "react";
 import "./App.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
-import ProductDeatils from "./pages/ProductDetails";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import ProductDetails from './pages/ProductDetails';
 import Cart from "./pages/Cart";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/product-details" element={<ProductDeatils />} exact />
-      <Route path="/Cart" element={<Cart />} exact />
-    </Routes>
-  );
+    return (
+        <Router>
+                <Route path="/" component={Home} exact />
+                <Route path="/product-details" component={ProductDetails} exact />
+                <Route path="/cart" component={Cart} exact />
+            
+        </Router>
+    );
 }
 
 export default App;

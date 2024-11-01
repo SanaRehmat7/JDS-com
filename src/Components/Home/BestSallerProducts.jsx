@@ -1,6 +1,7 @@
 import React from 'react'
 import Row from '../common/Row';
-import ProductCart from '../ProductCart';
+import ProductCart from './ProductCart';
+import Container from '../common/Container';
 
 
 const BestSellerProducts = () => {
@@ -73,8 +74,8 @@ const BestSellerProducts = () => {
                 <div className='w-[24%]  mb-[20px]'>
                     <ProductCart/>
                 </div>
-
-                </Row>
+            </Row>
+            <Container />
     </div> 
     );
 }
